@@ -1,0 +1,173 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif; /* Light aesthetic font */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: #f8f9fa; /* Light neutral background */
+    color: #0c0a0a; /* Slightly darker neutral text color */
+}
+
+html, body, #wrapper {
+    height: 100%;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Evenly space content vertically */
+    background-color: #f2e9e4; /* Soft beige background */
+}
+
+#header {
+    background-color: rgba(204, 180, 136, 0.763); /* Darker neutral header background */
+    color: #0c0404; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+#header h1 {
+    margin: 0;
+    padding: 15px;
+}
+
+#navigation {
+    text-align: center;
+}
+
+#navigation ul {
+    list-style-type: none;
+}
+
+#navigation ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#navigation ul li a {
+    text-decoration: none;
+    color: #0a0606; /* White text color */
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+#navigation ul li a:hover {
+    background-color: #95856d; /* Highlight color */
+    color: #333; /* Darker text color */
+}
+
+#content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white; /* White background for content */
+    border-radius: 10px;
+    margin: 20px;
+    color: #0c0707; /* Text color for content */
+}
+
+#content > * {
+    margin-bottom: 20px; /* Add space between content sections */
+}
+
+#footer {
+    background-color:rgba(204, 180, 136, 0.763); /* Darker neutral footer background */
+    color: #100a0a; /* White text color */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Contact Page Styles */
+#contactForm {
+    margin-bottom: 20px;
+}
+
+#contactForm label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px; /* Increase space below labels */
+    color: #333; /* Darker neutral text color */
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="tel"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px; /* Increase space between input fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#contactForm input[type="submit"],
+#contactForm input[type="reset"] {
+    margin-top: 20px; /* Increase space between form and buttons */
+    background-color: #95856d;
+    color: #fff; /* White text color for buttons */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error {
+    display: none; /* Hide error messages by default */
+}
+
+
+
+#content {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-wrapper {
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-end;
+    align-items:end;
+    margin:auto;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+.skill {
+    display: inline;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skill h3, .skill p {
+    margin: 0;
+    display: block;
+}
+
+.skill img {
+    margin-left:auto;
+    margin-right: 150px;
+    display:block;
+    width:100px;
+}
+
+#content li{
+    padding: 10px;
+}
+.content-wrapper {
+    display: flex;
+}
+@media(max-width:1000px){
+    .content-wrapper {
+        flex-direction: column;
+    }
+}
